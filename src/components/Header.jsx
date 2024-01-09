@@ -2,15 +2,15 @@ import { HelpOutlineOutlined, QuestionMarkOutlined, SearchOutlined } from "@mui/
 
 export default function Header() {
   return (
-    <header className="grid grid-cols-3 pl-8 pr-8 pt-3 pb-3 gap-3 items-center justify-between ">
+    <header className="grid grid-cols-3 px-8 py-3 gap-3 items-center justify-between ">
       <span className=" flex items-center justify-start  gap-4 ">
         <span className="text-lg text-[#1A181E] font-semibold">Payments</span>
         <span className="text-xs text-[#4D4D4D] flex gap-1 hover:cursor-pointer  items-center ">
           <HelpOutlineOutlined fontSize="sm" /> How it works
         </span>
       </span>
-      <span  className="bg-[#F2F2F2] flex flex-row outline-none w-full gap-2 px-4 py-2">
-       <SearchOutlined className="text-[#808080]"/>
+      <span className="bg-[#F2F2F2] flex flex-row outline-none w-full gap-2 px-4 py-2">
+        <SearchOutlined className="text-[#808080]" />
         <input
           type="text"
           placeholder="Search features, tutorials, etc."
