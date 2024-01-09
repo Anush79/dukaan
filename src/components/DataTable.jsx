@@ -81,7 +81,7 @@ export default function DataTable() {
       <TableContainer component={Paper}>
         <Table sx={{ minWidth: 650 }} aria-label="simple table">
           <TableHead>
-            <TableRow>
+            <TableRow className="text-[#4d4d4d]">
               <TableCell align="left">Order Id</TableCell>
               <TableCell align="left">Order Date</TableCell>
               <TableCell align="right">Order Amount</TableCell>
@@ -100,8 +100,8 @@ export default function DataTable() {
                  <span className="text-[#146EB4] font-medium">{row.orderId}</span>
                 </TableCell>
                 <TableCell align="left">{row.orderDate}</TableCell>
-                <TableCell align="right">{row.orderAmount}</TableCell>
-                <TableCell align="right">{row.transactionFee}</TableCell>
+                <TableCell align="right">₹{row.orderAmount}</TableCell>
+                <TableCell align="right">₹{row.transactionFee}</TableCell>
               </TableRow>
             ))}
           </TableBody>
