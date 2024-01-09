@@ -1,38 +1,71 @@
 .App {
   text-align: center;
+  display: flex;
+  font-family: Inter;
+  min-width: 100vw;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+main {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.active {
+  color: var(--primary-blue);
+  border-bottom: 3px solid var(--primary-blue);
+  padding-bottom:0.5rem;
+}
+.pages span{
+  padding:6px 8px;
+  border-radius:3px;
+}
+.active-page{
+  background-color: var(--primary-blue);
+  color: #fff;
+  
+}
+.left-side {
+  min-height: 100vh;
+  /* Full height of the viewport */
+  min-width: 16.5%;
+  background-color: var(--primary-color);
+  padding-top: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  color: #fff;
+  padding: 1rem 0.5rem;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.left-side ul {
+  list-style: none;
+  margin-bottom: 4px;
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  font-size: 0.9rem;
+  padding: 0.5rem 1rem;
+  display: flex;
+  gap: 12px;
+  border-radius: 5px;
+
+}
+
+li:hover {
+  background-color: var(--secondary-color);
+  cursor: pointer;
+
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+  display: block;
+}
+
+/* Change the background color when hovering over a link */
+a:hover {
+  background-color: #555;
 }
